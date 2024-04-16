@@ -13,3 +13,13 @@ nav {
     display: flex;
     flex-direction: row;
 }
+
+#header-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.main-logo {
+    width: 100px;
+    height: 100px;
+}
