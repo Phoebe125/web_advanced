@@ -26,50 +26,104 @@
                     <div><a href="#">Contracts</a></div>
                 </div>
                 <div class="nav-sns">
-                    <div><i class="fa-brands fa-github"></i></div>
-                    <div><i class="fa-brands fa-instagram"></i></div>
-                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                    <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
                 </div>
             </div>
         </nav>
         <!-- 프로필 -->
         <section id="profile">
-            <div>
-                <h1>Hi✋ My name is Sunmin 😊</h1>
+            <div class="profile-text">
+                <p>Hi✋ <br>
+                    My name is <br>
+                    <span>Sunmin</span><br>
+                    I build things for web
+                </p>
             </div>
-            <div>
-                <img id="header-logo" src="./images/쿼카jpeg.jpeg" />
+            <div class="profile-img-back">
+                <div class="profile-img"></div>
             </div>
         </section>
     </header>
     <!-- main -->
     <main>
         <!-- section -->
-        <section>
+        <section id="tech-stack">
             <h3>My Tech Stack</h3>
             <p>Technologies I've been working with recently</p>
-            <div>
-                <ul>
-                    <li><img src="./images/python.png" /></li>
-                    <li><img src="./images/django.png" /></li>
-                    <li><img src="./images/github_icon.png" /></li>
-                    <li><img src="./images/jupyter.png" /></li>
-                    <li><img src="./images/js.svg" /></li>
-                    <li><img src="./images/html.svg" /></li>
-                </ul>
+            <div class="tech-stack-container">
+                <div class="tech-stack-python"></div>
+                <div class="tech-stack-django"></div>
+                <div class="tech-stack-html"></div>
+                <div class="tech-stack-js"></div>
+                <div class="tech-stack-docker"></div>
+                <div class="tech-stack-github"></div>
+                <div class="tech-stack-ubuntu"></div>
+            </div>
+            <div class="tech-stack-container">
+                <div class="tech-stack-aws"></div>
+                <div class="tech-stack-ec2"></div>
+                <div class="tech-stack-confluence"></div>
+                <div class="tech-stack-jira"></div>
+                <div class="tech-stack-mysql"></div>
+                <div class="tech-stack-rstudio"></div>
+                <div class="tech-stack-streamlit"></div>
             </div>
         </section>
         <!-- section -->
-        <section>
+        <section id="projects">
             <h3>Projects</h3>
             <p>Things I've built so far</p>
-            <div>
-                <ul>
-                    <li><img src="https://source.unsplash.com/random/?golf" />파크골프원</li>
-                    <li><img src="https://source.unsplash.com/random/?data" />ETL 업무 및 대시보드</li>
-                    <li><img src="https://source.unsplash.com/random/?ETF" />ETF Bull Vibes</li>
-                    <li><img src="https://source.unsplash.com/random/?finance" />채권 유동성과 수익률</li>
-                </ul>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="golf-img"></div>
+                    <div class="project-detail">
+                        <div class="project-title">파크골프원</div>
+                        <div class="project-content">파크골프장 위치, 리뷰 제공, 파크골프 커뮤니티, 골프 스코어 기록 등의 서비스를 제공</div>
+                        <div class="project-tech">사용한 기술: Django, Python, AWS, HTML, CSS, Javascript, Github</div>
+                        <div class="project-link"><i class="fa-brands fa-github"></i><a
+                                href="https://github.com/ParkGolfOne/pirogramming_final_project" target="_blank">View
+                                Code</a></div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="data-img"></div>
+                    <div class="project-detail">
+                        <div class="project-title">ETL 업무 및 대시보드</div>
+                        <div class="project-content">외부에서 수집, 제공된 raw data를 가공하여 python data api 형태으로 사내 data 제공 <br>
+                            Api 호출량 모니터링 대시보드 제작
+                        </div>
+                        <div class="project-tech">사용한 기술: Python, Pandas, Streamlit</div>
+                        <div class="project-link"><i class="fa-solid fa-paperclip"></i><a
+                                href="https://www.notion.so/ETL-12c7e20545cf4f90b9e04f9ed9e343e3?pvs=4" target="_blank">View
+                                Contents</a></div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="etf-img"></div>
+                    <div class="project-detail">
+                        <div class="project-title">ETF Bull Vibes</div>
+                        <div class="project-content">사용자가 입력한 뉴스를 기반으로 ETF를 추천하는 GPT 활용한 챗봇</div>
+                        <div class="project-tech">사용한 기술: Python, Docker, ElasticSearch, GitLab</div>
+                        <div class="project-link"><i class="fa-brands fa-square-x-twitter"></i><a
+                                href="https://twitter.com/etfbullvibes" target="_blank">View Output</a></div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="finance-img"></div>
+                    <div class="project-detail">
+                        <div class="project-title">채권 수익률과 유동성 팩터 연구</div>
+                        <div class="project-content">Amihud liquid, liquidity innovation, predict liquidity
+                            세 가지 유동성 팩터 생성 <br>
+                            Fama-macbeth regression model 으로 채권 수익률에
+                            영향을 미치는 팩터 분석</div>
+                        <div class="project-tech">사용한 기술: Python, Stata, Pandas</div>
+                        <div class="project-link"><i class="fa-solid fa-paperclip"></i><a
+                                href="https://www.notion.so/Bond-Returns-and-Liquidity-Factors-501da084adee4057ab29e59a7a86d76f?pvs=4" target="_blank">View
+                                Contents</a></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -77,14 +131,14 @@
     <footer>
         <!-- up block -->
         <div>
-            <div><img class="main-logo" src="./images/logo.png" /></div>
+            <!-- <div><img class="main-logo" src="./images/logo.png" /></div> -->
             <div>
                 <ul>
-                    <li>+82 010 4767 5793</li>
+                    <!-- <li>+82 010 4767 5793</li>
                     <li>ted9988@naver.com</li>
                     <li><img src="./images/github_icon.png" /></li>
                     <li><img src="./images/notion.svg.png" /></li>
-                    <li><img src="./images/linkedin.jpg" /></li>
+                    <li><img src="./images/linkedin.jpg" /></li> -->
                 </ul>
             </div>
         </div>
@@ -105,4 +159,5 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/6fbcf91afd.js" crossorigin="anonymous"></script>
+
 </html>

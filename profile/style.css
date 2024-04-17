@@ -4,15 +4,15 @@ a {
     text-decoration: none
 }
 
-img {
-    width: 50px;
-    height: 50px;
+body {
+    margin: 20px 160px
 }
 
+/* 1. header */
+/* 1-1. nav */
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 20px 160px
 }
 
 .nav-logo {
@@ -37,10 +37,12 @@ nav {
     justify-content: flex-end;
     align-items: center;
 }
+
 .nav-menu a {
     color: inherit;
     text-decoration: none;
 }
+
 .nav-sns {
     display: flex;
     gap: 20px;
@@ -50,4 +52,264 @@ nav {
 .nav-sns i {
     font-size: 30px;
     color: rgb(0, 191, 99);
+}
+
+/* 1-2. profile */
+#profile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+
+.profile-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.profile-text span {
+    color: rgb(0, 191, 99);
+}
+
+.profile-img-back {
+    background: rgb(216, 215, 238);
+    background: linear-gradient(90deg, rgba(216, 215, 238, 1) 0%, rgba(0, 176, 191, 1) 29%, rgba(0, 191, 99, 1) 100%);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.profile-img {
+    background-image: url('./images/쿼카jpeg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    /* border: 1rem solid rgb(0, 191, 99); */
+}
+
+/* 2. main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#tech-stack h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+#tech-stack p {
+    font-size: 20px;
+}
+
+.tech-stack-container {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tech-stack-python {
+    background-image: url('./images/python.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-django {
+    background-image: url('./images/django.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-aws {
+    background-image: url('./images/aws.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-docker {
+    background-image: url('./images/docker.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-github {
+    background-image: url('./images/github.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-ubuntu {
+    background-image: url('./images/ubuntu.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-ec2 {
+    background-image: url('./images/amazonec2.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-confluence {
+    background-image: url('./images/confluence.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-jira {
+    background-image: url('./images/jira.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-html {
+    background-image: url('./images/html.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-js {
+    background-image: url('./images/js.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-mysql {
+    background-image: url('./images/mysql.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-rstudio {
+    background-image: url('./images/rstudio.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-streamlit {
+    background-image: url('./images/streamlit.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#projects h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+#projects p {
+    font-size: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 48px;
+}
+
+.project-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-detail {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.project-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-content{
+    color: gray;
+    line-height: 1.5;
+}
+
+.project-tech {
+    color: gray;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-link i{
+    margin-right: 8px;
+}
+/* 사용한 imgs */
+.golf-img {
+    background-image: url('https://source.unsplash.com/random/?golf');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.data-img {
+    background-image: url('https://source.unsplash.com/random/?data');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.etf-img {
+    background-image: url('https://source.unsplash.com/random/?ETF');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.finance-img {
+    background-image: url('https://source.unsplash.com/random/?finance');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
 }
