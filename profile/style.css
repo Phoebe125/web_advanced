@@ -1,18 +1,12 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'KCC-Hanbit';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Happiness-Sans-Title';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 a {
     text-decoration: none
 }
@@ -24,7 +18,7 @@ body {
     margin: 0 auto;
     padding: 0 250px;
     line-height: 1.5;
-    font-family: 'KCC-Hanbit';
+    font-family: 'SUITE-Regular';
 }
 
 /* 1. header */
@@ -109,10 +103,10 @@ nav {
 }
 
 .profile-text {
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: bolder;
+    font-size: 50px;
     line-height: 1.7;
-    font-family: 'Happiness-Sans-Title';
+    font-family: 'SUITE-Regular';
 }
 
 .profile-text span {
@@ -150,11 +144,11 @@ main {
     font-weight: bold;
     margin: 0;
     color: #345F53;
-    font-family: 'Happiness-Sans-Title';
+    font-family: 'SUITE-Regular';
 }
 
 .section-content {
-    font-size: 25px;
+    font-size: 20px;
     color: gray;
     margin-bottom: 30px;
 }
@@ -169,10 +163,11 @@ main {
 
 .tech-stack-container {
     padding-top: 30px;
-    display: flex;
+    display: grid;
     width: 70%;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .tech-stack-python {
@@ -319,14 +314,14 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .project-title {
     font-size: 22px;
     font-weight: bold;
     color: #345F53;
-    font-family: 'Happiness-Sans-Title';
+    font-family: 'SUITE-Regular';
 }
 
 .project-content {
@@ -498,12 +493,12 @@ main {
     padding: 10px;
     border-radius: 50%;
     color: white;
-    background-color: #008000;
-    transition: 0.3s ease;
+    background-color: rgb(0, 191, 99);
+    transition: 0.5s ease;
 }
 
 .footer-button i:hover {
     transition: 0.5s ease;
-    color: #008000;
+    color: rgb(0, 191, 99);
     background-color: white;
 }
