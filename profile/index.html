@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css" />
     <!-- 우선순위 때문에 reset.css를 먼저 해야함 -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="style-responsive.css" />
+    <link rel="stylesheet" media="(min-width: 769px)" href="style.css" />
     <title>Sunmin</title>
 </head>
 
@@ -17,6 +18,11 @@
         <nav>
             <div class="nav-logo">
                 <img class="main-logo" src="./images/logo.png" alt="logo"/>
+                <div class="nav-sns-left">
+                    <div><a href="https://github.com/Phoebe125" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                    <div><a href="https://www.instagram.com/sunmin_84/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/%EC%84%A0%EB%AF%BC-%EC%9D%B4-8909731a3/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
             </div>
             <div class="nav-items">
                 <div class="nav-menu">
