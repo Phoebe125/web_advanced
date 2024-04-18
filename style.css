@@ -1,0 +1,504 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    /* 전체 페이지를 중앙으로 오게하는 기본 css 코드 */
+    max-width: 1228px;
+    min-width: 480px;
+    margin: 0 auto;
+    padding: 0 250px;
+    line-height: 1.5;
+    font-family: 'SUITE-Regular';
+}
+
+/* 1. header */
+/* 1-1. nav */
+header {
+    padding: 23px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+.nav-logo {
+    margin-top: 3.5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-logo img,
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 36px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu div {
+    transition: 0.5s ease;
+}
+
+.nav-menu div:hover {
+    transition: 0.5s ease;
+    color: rgb(0, 191, 99);
+}
+
+.nav-menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-sns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-sns i {
+    font-size: 30px;
+    color: rgb(0, 191, 99);
+    transition: 0.5s ease;
+}
+
+.nav-sns i:hover {
+    color: #345F53;
+    transition: 0.5s ease;
+}
+
+/* 1-2. profile */
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    align-items: center;
+}
+
+.profile-text {
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 1.7;
+    font-family: 'SUITE-Regular';
+}
+
+.profile-text span {
+    background: linear-gradient(90deg, rgba(216, 215, 238, 1) -20%, rgba(0, 176, 191, 1) 29%, rgba(0, 191, 99, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.profile-img-back {
+    background: rgb(216, 215, 238);
+    background: linear-gradient(90deg, rgba(216, 215, 238, 1) 0%, rgba(0, 176, 191, 1) 29%, rgba(0, 191, 99, 1) 100%);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.profile-img {
+    background-image: url('./images/쿼카jpeg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* 2. main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    color: #345F53;
+    font-family: 'SUITE-Regular';
+}
+
+.section-content {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* 2-1. tech-stack */
+#tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tech-stack-container {
+    padding-top: 30px;
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.tech-stack-python {
+    background-image: url('./images/python.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-django {
+    background-image: url('./images/django.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-aws {
+    background-image: url('./images/aws.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-docker {
+    background-image: url('./images/docker.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-github {
+    background-image: url('./images/github.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-ubuntu {
+    background-image: url('./images/ubuntu.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-ec2 {
+    background-image: url('./images/amazonec2.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-confluence {
+    background-image: url('./images/confluence.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-jira {
+    background-image: url('./images/jira.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-html {
+    background-image: url('./images/html.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-js {
+    background-image: url('./images/js.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-mysql {
+    background-image: url('./images/mysql.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-rstudio {
+    background-image: url('./images/rstudio.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-streamlit {
+    background-image: url('./images/streamlit.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-container div:hover {
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.tech-stack-container div {
+    cursor: pointer;
+}
+
+/* 2-2. projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.projects-container {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 30px;
+}
+
+.project-item {
+    background: white;
+    border-radius: 10px;
+    height: 470px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.project-item:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.project-detail {
+    box-sizing: border-box;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #345F53;
+    font-family: 'SUITE-Regular';
+}
+
+.project-content {
+    color: gray;
+}
+
+.project-tech {
+    color: #345F53;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project-link a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.project-link a:hover {
+    transition: 0.5s ease;
+    color: rgb(0, 191, 99);
+}
+
+.project-link i {
+    margin-right: 10px;
+}
+
+
+/* 사용한 imgs */
+.golf-img {
+    background-image: url('https://source.unsplash.com/random/?golf');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.data-img {
+    background-image: url('https://source.unsplash.com/random/?data');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.etf-img {
+    background-image: url('https://source.unsplash.com/random/?ETF');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.finance-img {
+    background-image: url('https://source.unsplash.com/random/?finance');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+/* 3. footer */
+/* 3-1. footer-top */
+#top-footer{
+    display: flex;
+    padding: 80px 0 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #345F53;
+}
+
+.footer-logo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.footer-contract{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    color: gray;
+    gap: 25px;
+}
+
+.footer-contract a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-sns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-sns i {
+    font-size: 30px;
+    color: rgb(0, 191, 99);
+    transition: 0.5s ease;
+}
+
+.footer-sns i:hover {
+    color: #345F53;
+    transition: 0.5s ease;
+}
+
+/* 3-2. footer-bottom */
+#bottom-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+    gap: 30px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    color: gray;
+}
+
+.footer-menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: gray;
+}
+
+.footer-copyright span {
+    background: linear-gradient(90deg, rgba(216, 215, 238, 1) -20%, rgba(0, 176, 191, 1) 29%, rgba(0, 191, 99, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer-button {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.footer-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-button i {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(0, 191, 99);
+    transition: 0.5s ease;
+}
+
+.footer-button i:hover {
+    transition: 0.5s ease;
+    color: rgb(0, 191, 99);
+    background-color: white;
+}
