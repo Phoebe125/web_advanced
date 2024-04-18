@@ -12,9 +12,8 @@ a {
 }
 
 body {
-    /* 전체 페이지를 중앙으로 오게하는 기본 css 코드 */
+    padding: 15px;
     margin: 0 auto;
-    padding: 0 250px;
     line-height: 1.5;
     font-family: 'SUITE-Regular';
 }
@@ -22,36 +21,32 @@ body {
 /* 1. header */
 /* 1-1. nav */
 header {
-    padding: 23px 0;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 17px;
+    flex-direction: column;
+    font-size: 13px;
 }
 
 .nav-logo {
-    margin-top: 3.5px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
 }
 
 .nav-logo img,
 .footer-logo img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-}
-
-.nav-sns-left{
-    display: none;
 }
 
 .nav-items {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 36px;
 }
 
@@ -76,19 +71,23 @@ nav {
     text-decoration: none;
 }
 
-.nav-sns {
+.nav-sns-left {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.nav-sns i {
+.nav-sns-left i {
     font-size: 30px;
     color: rgb(0, 191, 99);
     transition: 0.5s ease;
 }
 
-.nav-sns i:hover {
+.nav-sns {
+    display: none;
+}
+
+.nav-sns-left i:hover {
     color: #345F53;
     transition: 0.5s ease;
 }
@@ -97,8 +96,8 @@ nav {
 #profile {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: center;
+    width: 80%;
     margin: 0 auto;
     height: 500px;
     align-items: center;
@@ -106,7 +105,7 @@ nav {
 
 .profile-text {
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.7;
     font-family: 'SUITE-Regular';
 }
@@ -121,15 +120,15 @@ nav {
     background: rgb(216, 215, 238);
     background: linear-gradient(90deg, rgba(216, 215, 238, 1) 0%, rgba(0, 176, 191, 1) 29%, rgba(0, 191, 99, 1) 100%);
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .profile-img {
     background-image: url('./images/쿼카jpeg.jpeg');
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     padding: 10px;
 }
@@ -142,7 +141,7 @@ main {
 }
 
 .section-title {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
     color: #345F53;
@@ -150,9 +149,9 @@ main {
 }
 
 .section-content {
-    font-size: 20px;
+    font-size: 15px;
     color: gray;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* 2-1. tech-stack */
@@ -160,16 +159,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
 
 .tech-stack-container {
-    padding-top: 30px;
     display: grid;
-    width: 70%;
-    grid-template-columns: repeat(7, 1fr);
+    padding-top: 20px;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
 }
 
 .tech-stack-python {
@@ -284,76 +281,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .projects-container {
-    padding: 30px 0;
+    padding: 20px 0;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
 }
 
 .project-item {
     background: white;
     border-radius: 10px;
-    height: 470px;
+    height: 400px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 
-.project-item:hover{
+.project-item:hover {
     transition: 0.5s ease;
     transform: scale(1.1);
 }
 
 .project-detail {
-    box-sizing: border-box;
-    height: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
-    font-size: 15px;
-}
-
-.project-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #345F53;
-    font-family: 'SUITE-Regular';
-}
-
-.project-content {
-    color: gray;
-}
-
-.project-tech {
-    color: #345F53;
-    line-height: 1.5;
-}
-
-.project-link {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.project-link a {
-    color: inherit;
-    text-decoration: none;
-    transition: 0.5s ease;
-}
-
-.project-link a:hover {
-    transition: 0.5s ease;
-    color: rgb(0, 191, 99);
-}
-
-.project-link i {
-    margin-right: 10px;
+    visibility: hidden;
 }
 
 
@@ -363,7 +318,7 @@ main {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
     text-align: center;
 }
 
@@ -372,7 +327,7 @@ main {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 
 .etf-img {
@@ -380,7 +335,7 @@ main {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 
 .finance-img {
@@ -388,12 +343,12 @@ main {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 
 /* 3. footer */
 /* 3-1. footer-top */
-#top-footer{
+#top-footer {
     display: flex;
     padding: 80px 0 20px 0;
     flex-direction: row;
@@ -407,14 +362,14 @@ main {
     cursor: pointer;
 }
 
-.footer-right{
+.footer-right {
     display: flex;
     flex-direction: row;
     gap: 40px;
     align-items: baseline;
 }
 
-.footer-contract{
+.footer-contract {
     display: flex;
     flex-direction: row;
     font-size: 15px;
@@ -422,7 +377,7 @@ main {
     gap: 25px;
 }
 
-.footer-contract a{
+.footer-contract a {
     color: inherit;
     text-decoration: none;
 }
@@ -445,7 +400,7 @@ main {
 }
 
 /* 3-2. footer-bottom */
-#bottom-footer{
+#bottom-footer {
     display: flex;
     flex-direction: column;
     padding: 40px 10px;
@@ -460,12 +415,12 @@ main {
     color: gray;
 }
 
-.footer-menu a{
+.footer-menu a {
     color: inherit;
     text-decoration: none;
 }
 
-.footer-copyright{
+.footer-copyright {
     display: flex;
     flex-direction: row;
     justify-content: center;
