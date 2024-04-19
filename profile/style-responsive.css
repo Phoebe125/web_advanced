@@ -304,7 +304,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .project-detail:hover {
@@ -312,7 +312,7 @@ main {
 }
 
 .project-title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #bfff00;
     font-family: 'SUITE-Regular';
@@ -345,9 +345,9 @@ main {
     color: inherit;
     text-decoration: none;
     font-size: 20px;
-    top: 345px;
-    right: 32px;
-    font-size: 22px;
+    top: 360px;
+    right: 20px;
+    font-size: 15px;
 }
 
 .project-link-mobile a {
