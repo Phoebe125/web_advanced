@@ -14,22 +14,20 @@ a {
 body {
     /* 전체 페이지를 중앙으로 오게하는 기본 css 코드 */
     margin: 0 auto;
-    padding: 0 250px;
+    padding: 10px 10%;
     line-height: 1.5;
     font-family: 'SUITE-Regular';
 }
 
 /* 1. header */
 /* 1-1. nav */
-header {
-    padding: 23px 0;
-}
 
 nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .nav-logo {
@@ -97,12 +95,13 @@ nav {
 #profile {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    height: 500px;
+    justify-content: center;
+    gap: 100px;
+    margin: 80px auto;
+    margin-bottom: 150px;
     align-items: center;
 }
+
 
 .profile-text {
     font-weight: bolder;
@@ -166,8 +165,7 @@ main {
 .tech-stack-container {
     padding-top: 30px;
     display: grid;
-    width: 70%;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
     grid-auto-rows: minmax(100px, auto);
 }

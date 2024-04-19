@@ -12,7 +12,7 @@ a {
 }
 
 body {
-    padding: 15px;
+    padding: 10px 10%;
     margin: 0 auto;
     line-height: 1.5;
     font-family: 'SUITE-Regular';
@@ -20,40 +20,33 @@ body {
 
 /* 1. header */
 /* 1-1. nav */
-header {
-    padding: 10px 0;
-}
 
 nav {
     display: flex;
     flex-direction: column;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .nav-logo {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    align-content: center;
 }
 
 .nav-logo img,
 .footer-logo img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 
-.nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 36px;
-}
+
 
 .nav-menu {
     display: flex;
-    gap: 36px;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 0 5%;
     align-items: center;
 }
 
@@ -78,7 +71,7 @@ nav {
 }
 
 .nav-sns-left i {
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(0, 191, 99);
     transition: 0.5s ease;
 }
@@ -97,15 +90,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
     margin: 0 auto;
+    margin-bottom: 50px;
     height: 500px;
     align-items: center;
 }
 
 .profile-text {
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.7;
     font-family: 'SUITE-Regular';
 }
@@ -141,9 +134,9 @@ main {
 }
 
 .section-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    margin: 0;
+    margin: 10px;
     color: #345F53;
     font-family: 'SUITE-Regular';
 }
@@ -287,7 +280,7 @@ main {
     padding: 20px 0;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1, minmax(450px, 1fr));
+    grid-template-columns: repeat(1, minmax(1fr, 400px));
     gap: 30px;
 }
 
@@ -351,7 +344,7 @@ main {
     z-index: 10;
     color: inherit;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 20px;
     top: 345px;
     right: 32px;
     font-size: 22px;
@@ -430,11 +423,11 @@ main {
 /* 3-1. footer-top */
 #top-footer {
     display: flex;
-    padding: 80px 0 20px 0;
+    padding: 80px 0 10px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #345F53;
+    border-bottom: 0.5px solid #345F53;
 }
 
 .footer-logo {
@@ -445,16 +438,17 @@ main {
 .footer-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: flex-end;
+    gap: 8px;
 }
 
 .footer-contract {
     display: flex;
     flex-direction: row;
-    font-size: 13px;
+    font-size: 10px;
     color: gray;
-    gap: 15px;
+    gap: 8px;
+    justify-content: flex-end;
 }
 
 .footer-contract a {
@@ -491,6 +485,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 13px;
     color: gray;
 }
 
@@ -503,6 +498,7 @@ main {
     display: inline-block;
     text-align: center;
     color: gray;
+    font-size: 13px;
 }
 
 .footer-copyright span {
