@@ -384,7 +384,7 @@ main {
 /* 사용한 imgs */
 .golf-img {
     position: absolute;
-    background-image: url('./images/golf.jpg');
+    /* background-image: url('./images/golf.jpg'); */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -401,7 +401,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('./images/data.jpg');
+    /* background-image: url('./images/data.jpg'); */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -417,7 +417,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('./images/etf.jpg');
+    /* background-image: url('./images/etf.jpg'); */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -433,7 +433,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('./images/stock.jpg');
+    /* background-image: url('./images/stock.jpg'); */
     background-size: cover;
     background-position: center;
     width: 100%;
