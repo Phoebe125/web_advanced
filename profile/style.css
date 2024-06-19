@@ -361,7 +361,7 @@ main {
 
 /* 사용한 imgs */
 .golf-img {
-    background-image: url('https://source.unsplash.com/random/?golf');
+    background-image: url('./images/golf.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -370,7 +370,7 @@ main {
 }
 
 .data-img {
-    background-image: url('https://source.unsplash.com/random/?data');
+    background-image: url('./images/data.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -378,7 +378,7 @@ main {
 }
 
 .etf-img {
-    background-image: url('https://source.unsplash.com/random/?ETF');
+    background-image: url('./images/etf.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -386,7 +386,7 @@ main {
 }
 
 .finance-img {
-    background-image: url('https://source.unsplash.com/random/?finance');
+    background-image: url('./images/stock.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
