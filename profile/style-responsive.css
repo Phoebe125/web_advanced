@@ -258,7 +258,33 @@ main {
     width: 70px;
     height: 70px;
 }
+.tech-stack-react {
+    background-image: url('./images/react.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
 
+.tech-stack-express {
+    background-image: url('./images/express.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-node {
+    background-image: url('./images/nodedotjs.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack-mongodb {
+    background-image: url('./images/mongodb.svg');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
 .tech-stack-container div:hover {
     transition: 0.5s ease;
     transform: scale(1.1);
@@ -358,7 +384,7 @@ main {
 /* 사용한 imgs */
 .golf-img {
     position: absolute;
-    background-image: url('https://source.unsplash.com/random/?golf');
+    background-image: url('./images/golf.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -375,7 +401,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('https://source.unsplash.com/random/?data');
+    background-image: url('./images/data.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -391,7 +417,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('https://source.unsplash.com/random/?ETF');
+    background-image: url('./images/etf.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -407,7 +433,7 @@ main {
     position: absolute;
     transition: 0.5s ease;
     z-index: 1;
-    background-image: url('https://source.unsplash.com/random/?finance');
+    background-image: url('./images/stock.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
